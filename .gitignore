@@ -1,0 +1,105 @@
+# ==========================
+# Python
+# ==========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Flask
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment Variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# ==========================
+# Terraform
+# ==========================
+
+.terraform/
+
+*.tfstate
+*.tfstate.*
+crash.log
+
+override.tf
+override.tf.json
+
+*_override.tf
+*_override.tf.json
+
+.terraform.lock.hcl
+
+# Terraform Variable Files
+terraform.tfvars
+*.auto.tfvars
+
+# Terraform Plans
+*.tfplan
+
+# ==========================
+# Docker
+# ==========================
+
+docker-compose.override.yml
+
+# ==========================
+# AWS / Floci
+# ==========================
+
+.aws/
+
+# Local Credentials
+credentials.json
+
+# ==========================
+# Build Artifacts
+# ==========================
+
+dist/
+build/
+
+*.zip
+*.tar.gz
+
+# Elastic Beanstalk
+.elasticbeanstalk/
+
+# ==========================
+# Testing
+# ==========================
+
+.pytest_cache/
+coverage.xml
+
+# ==========================
+# Misc
+# ==========================
+
+tmp/
+temp/
