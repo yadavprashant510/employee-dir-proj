@@ -56,7 +56,7 @@ override.tf.json
 .terraform.lock.hcl
 
 # Terraform Variable Files
-terraform.tfvars
+*.terraform.tfvars
 *.auto.tfvars
 
 # Terraform Plans
