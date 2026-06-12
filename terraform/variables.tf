@@ -7,4 +7,3 @@ variable "instance_type" {
   description = "Select the provided instance type in which you want to install the application"
   default = "t2.micro"
 }
-
