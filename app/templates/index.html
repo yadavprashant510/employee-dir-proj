@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+Employees
+{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between mb-3">
+    <h2>Employees</h2>
+
+    <a href="/employee/add"
+       class="btn btn-primary">
+       Add Employee
+    </a>
+</div>
+
+<form method="GET" class="mb-3">
+    <input
+        type="text"
+        name="search"
+        class="form-control"
+        placeholder="Search employee"
+    >
+</form>
+
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    {% for employee in employees %}
+        <tr>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.department }}</td>
+
+            <td>
+                <a href="/employee/delete/{{ employee.id }}"
+                   class="btn btn-danger btn-sm">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}
